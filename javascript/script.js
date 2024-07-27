@@ -38,6 +38,26 @@ for(let i=0; i<=15; i++){
     }
 }
 
+//prime number 
+console.log("\n\n\n\n\n")
+
+
+
+let num=12;
+let count=0;
+
+for(let i=2; i<=num/2; i++){
+    if(num%i==0){
+        count++
+    }
+    if (count==0){
+        console.log("prime")
+    }
+    else{
+        console.log("no prime")
+    }
+}
+
 
 
 //spread operator
