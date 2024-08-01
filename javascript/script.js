@@ -132,7 +132,124 @@ console.log("street : ",street);
 
 
 
+console.log("/n/n/n/n/n/n");
+//array methods
 
+console.log("this : " , this);
+
+let obj2 = {
+    name : "mark",
+    email : "mark@gmail.com" ,
+    age : 30 ,
+    printAge : function () {
+        console.log("function execution started....");
+        console.log("this : " , this);
+        console.log("age : ", this.age);
+        return "function execution completed!";
+    }
+}
+
+
+console.log("/n/n/n/n/n");
+
+console.log("this : ", this);
+
+let obj3= {
+    name : "lachu",
+    email:"lachu123@gmail.com",
+    age : 19,
+    printAge : function() {
+        console.log("function execution started....");
+        console.log("this : " , this);
+        // console.log("age : ", age);
+        return "function execution completed!";
+    }
+}
+
+console.log("obj3 : ", obj3);
+console.log("name : ", obj3.name);
+console.log("obj3 : ", obj3.email);
+console.log("obj3.printAge() : ", obj3.printAge());
+
+console.log("/n/n/n/n/n");
+
+
+function greet(message1,message2) {
+    console.log("message1 : ",message1);
+    console.log("message2 : ",message2);
+
+
+    console.log("this : ",this);
+    console.log("name : " ,this.name);
+
+    let output = greet.bind(obj3, "hello","hai");
+    console.log("output : ",output);
+    output();
+
+
+
+}
+
+
+
+let obj4 ={
+    name : "Henry",
+    age : 12,
+    greeting : function() {
+        console.log('Hello ${this.name}, your age is ${this.age}');
+
+    }
+}
+
+
+
+//constructor function 
+
+function person(name,age){
+    this.name = name;
+    this.age = age;
+
+    this.greeting = function () {
+        console.log('Hai ${this.name}, you are ${this.age}year old!');
+
+    }
+}
+
+
+let  person1 =  new person("henry" , 55);
+console.log("person1 : ",person1);
+person1.greeting();
+
+
+let  person2 =  new person("shanks" , 32);
+console.log("person2 : ",person2);
+person1.greeting();
+
+
+console.log("/n/n/n/n/n/n");
+
+
+//using classes
+
+class person3 {
+    name;
+    age;
+    mark;
+
+    constructor(name,age,mark){
+        this.name=name;
+        this.age=age;
+        this.mark=mark;
+    }
+
+    greeting() {
+        console.log('Hello ${this.name}, your age is ${this.age} and your mark is ${this.mark}');
+    }
+}
+
+let person3 = new person("john" , 12, 70);
+console.log("person1 : ",person3);
+person3.greeting();
 
 
 
