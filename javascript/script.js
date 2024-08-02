@@ -196,7 +196,7 @@ let obj4 ={
     name : "Henry",
     age : 12,
     greeting : function() {
-        console.log('Hello ${this.name}, your age is ${this.age}');
+        console.log(`Hello ${this.name}, your age is ${this.age}`);
 
     }
 }
@@ -210,7 +210,7 @@ function person(name,age){
     this.age = age;
 
     this.greeting = function () {
-        console.log('Hai ${this.name}, you are ${this.age}year old!');
+        console.log(`Hai ${this.name}, you are ${this.age}year old!`);
 
     }
 }
@@ -231,7 +231,9 @@ console.log("/n/n/n/n/n/n");
 
 //using classes
 
-class person3 {
+
+{
+class person{
     name;
     age;
     mark;
@@ -243,13 +245,95 @@ class person3 {
     }
 
     greeting() {
-        console.log('Hello ${this.name}, your age is ${this.age} and your mark is ${this.mark}');
+        console.log(`Hello ${this.name}, your age is ${this.age} and your mark is ${this.mark}`);
     }
 }
 
 let person3 = new person("john" , 12, 70);
-console.log("person1 : ",person3);
+console.log("person1 : ",person);
 person3.greeting();
+}
+
+
+
+
+
+console.log("\n\n\n\n\n\n")
+
+{
+class button {
+    button;
+
+
+    constructor (content) {
+        this.button = document.createElement('button');
+        this.button.innerHTML = content;
+        document.body.appendChild(this.button);
+    }
+
+
+    set width(width) {
+        this.button.style.width = width + "px";
+    }
+    
+
+    set height(height) {
+        this.button.style.height = height + "px";
+    }
+
+    get width (){
+        return this.button.style.width;
+    }
+
+
+    get height (){
+        return this.button.style.height;
+    }
+
+    onClick (fn) {
+        this.button.onclick = fn;
+    }
+
+}
+
+let button1 = new button('click');
+console.log("button1",button1)
+
+
+button1.width = 100;
+button1.height = 100;
+console.log("button1  : " , button1);
+
+console.log("width : ",button1.width);
+console.log("height : " , button1.height); 
+console.log("yhhhuuu",button1);
+
+button1.onClick(function (){
+    console.log("buttonclicked")
+});
+
+class BlackButton extends button {
+      
+
+    constructor(content) {
+        super(content);
+        this.button.style.background = "black";
+        this.button.style.color = "white";
+    }
+
+
+
+    let BlackButton = new BlackButton("Don't click");
+
+    blackButton.onClick(function () {
+        console.log("Black button clicked.....");
+    })
+}
+
+}
+
+
+
 
 
 
