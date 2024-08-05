@@ -377,13 +377,66 @@ para1.onClick(function(){
         
 });
 para1.onmouseover(function(){
-    para1.setColor('yellow');
+    para1.setColor('green');
 })
 para1.onmouseout(function(){
     para1.setColor('red');
     para1.setBgColor('white');
     para1. setFontSize(20);
 })
+
+
+
+console.log ("\n\n\n\n\n\n\n");
+
+console.log("first line.....");
+console.log("second line.....");
+console.log("Third line.....");
+
+
+
+
+
+console.log ("\n\n\n\n\n\n\n");
+
+console.log("first line.....");
+//Timers
+setTimeout(() => {
+    console.log("second line.....");
+})
+console.log("third line.....");
+
+
+
+console.log ("\n\n\n\n\n\n\n");
+
+console.log("first line.....");
+//Timers
+setTimeout(() => {
+    console.log("second line.....");
+})
+
+
+//event listeners
+let btn = document.getElementById('btn');
+console.log("btn : ",btn);
+
+btn.addEventListener('click' , function() {
+    console.log("Button clicked.....");
+})
+
+
+//network fetch() api
+let datas = fetch('https://jsonplaceholder.typicode.com/users');
+console.log("datas : " , datas);
+
+console.log("third line.....");
+
+
+
+
+
+
 
 
 
