@@ -474,6 +474,7 @@ xhr.onreadystatechange = function (){
                 <td>${datas[i].username}</td>
                 <td>${datas[i].email}</td>
                 <td>${datas[i].website}</td>
+                <td><button onClick="handleClick(${datas[i].id})">View</button>
             </tr>
             `
            }
@@ -481,6 +482,25 @@ xhr.onreadystatechange = function (){
            
            datacontainer.innerHTML = rows;
         }
+
+    }
+    function handleClick(id){
+        console.log("Reached here.......");
+        console.log("id : , id ");
+
+        window.location.href = `dashboard.html?id=${id}`;
+
+        return;
+    }
+
+    function loadUserDatas(){
+        console.log("loading....");
+
+        let location = window.location;
+        console.log("location : " , location);
+
+        let querystring = location.search;
+        console.log("querystring : ",querystring);
     }
 }
 
