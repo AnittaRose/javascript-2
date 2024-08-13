@@ -505,8 +505,92 @@ xhr.onreadystatechange = function (){
 }
 
 
+console.log ("\n\n\n\n\n\n\n");
+
+let datas1 = [
+    {
+        id : 1,
+        name : "john",
+        age : 12,
+    },
+    {
+        id : 2,
+        name : "jane",
+        age : 8,
+    }
+]
+console.log("datas1 : " ,datas1);
+function findUser(id){
+    let user = datas1.find(data => data.id === id);
+    return user;
+}
+
+let user = findUser(1);
+console.log("user : ",user);
 
 
+function findUser1(id) {
+    let user = datas1.find(data => data.id === id);
+
+    setTimeout(()=>{
+        return user;
+    },1000);
+}
+
+
+
+let user1 = findUser1(2);
+console.log("user1 : ",user1);
+
+
+function findUser2(id) {
+    return new Promise ((resolve , reject)=>{
+        let user = datas1.find(data =>data.id === id);
+
+        setTimeout(()=> {
+            if(user){
+                resolve(user);
+            }else{
+                reject("user not found");
+            }
+        },1000);
+    })
+}
+
+
+findUser2(10)
+    .then((user)=>{
+        console.log("user2 : ",user);
+    })
+    .catch((message)=>{
+        console.log("message : ",message);
+    })
+
+
+    console.log("remaining code......")
+
+
+
+fetch('https://jsonplaceholder.typicode.com/users')
+
+.then((user)=> {
+    console.log("users : ",users);
+
+
+    users.json()
+    .then((parsed_datas) => {
+        console.log("parsed_datas : ", parsed_datas);
+    })
+    .catch((error)=>{
+        console.log("something went wrong! ");
+    });
+
+
+    console.log("parsed_user_data : ", parsed_user_data);
+})
+.catch((error)=>{
+    console.log("error : " , error);
+})
 
 
 
