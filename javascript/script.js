@@ -696,10 +696,46 @@ console.log("result22 : " , result22);
 
 
 
+console.log("\n\n\n\n\n\n\n");
+
+//{} - indicates the number of characters, a{2} means 'aa' , ie 2 a
+
+const regexp23 = /L{2}o$/i;
+const result23 = regexp23.test(str5);
+console.log("result23 : ",result23);
+
+const regexp24 = /L{2,4}o$/i;
+const result24 = regexp24.test(str5);
+console.log("result24 : ",result24);
+
+const regexp25 = /HEL{2,4}O$/i;
+const result25 = regexp25.test(str5);
+console.log("result25 : ",result25);
+
+const regexp26 = /HEL{2,}O$/i;
+const result26 = regexp26.test(str5);
+console.log("result26 : ",result26);
+
+// \ - indicate escape characters used for matching any characters which has special meaning
+
+const regexp27 = /\d/i;
+const result27 = regexp27.test(str5);
+console.log("result27 : ",result27);
+
+const regexp28 = /\D/i;
+const result28 = regexp28.test(str5);
+console.log("result28 : ",result28);
 
 
+// suppose we want to match '-' in a string.since '-' has a special meaning in regular expressions it will not work as expected and will match everything
+
+const regexp29 = /-/i;
+const result29 = regexp29.test(str5);
+console.log("result29 : ",result29);
 
 
-
-
+// so we can write it as 
+const regexp30 = /\-/i;
+const result30 = regexp30.test(str5);
+console.log("result30 : ",result30);
 
