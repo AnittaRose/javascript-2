@@ -595,147 +595,184 @@
 
 
 
-const str1 = "The cat is white";
-const str2 = "rat eats fish";
-const str3 = "is it ok fishes";
-const str4 = `Hello 
-good meat 
-is always good 
-Hai`
+// const str1 = "The cat is white";
+// const str2 = "rat eats fish";
+// const str3 = "is it ok fishes";
+// const str4 = `Hello 
+// good meat 
+// is always good 
+// Hai`
 
 
-const regexp1 = /a/;
-const result1 = regexp1.test(str1);
-console.log("result1 : ",result1);
+// const regexp1 = /a/;
+// const result1 = regexp1.test(str1);
+// console.log("result1 : ",result1);
 
-const regexp2 = /A/i;
-const result2 = regexp2.test(str1);
-console.log("result2 : ",result2);
+// const regexp2 = /A/i;
+// const result2 = regexp2.test(str1);
+// console.log("result2 : ",result2);
 
-const regexp3 = /ab/;
-const result3 = regexp3.test(str1);
-console.log("result3 : ",result3);
+// const regexp3 = /ab/;
+// const result3 = regexp3.test(str1);
+// console.log("result3 : ",result3);
 
-const regexp4 = /[crb]a/i;
-const result4 = regexp4.test(str1);
-console.log("result4 : ",result4);
+// const regexp4 = /[crb]a/i;
+// const result4 = regexp4.test(str1);
+// console.log("result4 : ",result4);
 
-const regexp5 = /[a-z]a/i;
-const result5 = regexp5.test(str1);
-console.log("result5 : ",result5);
+// const regexp5 = /[a-z]a/i;
+// const result5 = regexp5.test(str1);
+// console.log("result5 : ",result5);
 
-const regexp6 = /[a-z0-9]a/i;
-const result6 = regexp6.test(str1);
-console.log("result6 : ",result6);
+// const regexp6 = /[a-z0-9]a/i;
+// const result6 = regexp6.test(str1);
+// console.log("result6 : ",result6);
 
-const regexp7 = /^rat/i;
-const result7 = regexp7.test(str2);
-console.log("result7 : ",result7);
+// const regexp7 = /^rat/i;
+// const result7 = regexp7.test(str2);
+// console.log("result7 : ",result7);
 
-const regexp8 = /fish$/;
-const result8 = regexp8.test(str2);
-console.log("result8 : ",result8);
+// const regexp8 = /fish$/;
+// const result8 = regexp8.test(str2);
+// console.log("result8 : ",result8);
 
-const regexp9 = /^good/im;
-const result9 = regexp9.test(str4);
-console.log("result9 : ",result9);
+// const regexp9 = /^good/im;
+// const result9 = regexp9.test(str4);
+// console.log("result9 : ",result9);
 
-const regexp10 = /good$/im;
-const result10 = regexp10.test(str4);
-console.log("result10 : ",result10);
+// const regexp10 = /good$/im;
+// const result10 = regexp10.test(str4);
+// console.log("result10 : ",result10);
 
-const regexp11 = /fishes?/im;
-const result11 = regexp11.test(str3);
-console.log("result11 : ",result11);
+// const regexp11 = /fishes?/im;
+// const result11 = regexp11.test(str3);
+// console.log("result11 : ",result11);
 
-const regexp12 = /fish(es)?/im;
-const result12 = regexp12.test(str3);
-console.log("result12 : ",result12);
+// const regexp12 = /fish(es)?/im;
+// const result12 = regexp12.test(str3);
+// console.log("result12 : ",result12);
 
-const regexp13 = /fish*$/i;
-const result13 = regexp13.test(str3);
-console.log("result13 : ",result13);
+// const regexp13 = /fish*$/i;
+// const result13 = regexp13.test(str3);
+// console.log("result13 : ",result13);
 
-const regexp14 = /fish+$/i;
-const result14 = regexp14.test(str3);
-console.log("result14 : ",result14);
+// const regexp14 = /fish+$/i;
+// const result14 = regexp14.test(str3);
+// console.log("result14 : ",result14);
 
-const regexp15 = /fish.$/i;
-const result15 = regexp15.test(str3);
-console.log("result15 : ",result15);
+// const regexp15 = /fish.$/i;
+// const result15 = regexp15.test(str3);
+// console.log("result15 : ",result15);
 
-const regexp16 = /fish*$/i;
-const result16 = regexp16.test(str3);
-console.log("result16 : ",result16);
+// const regexp16 = /fish*$/i;
+// const result16 = regexp16.test(str3);
+// console.log("result16 : ",result16);
 
-const str5 = "Hello";
+// const str5 = "Hello";
 
-const regexp17 = /[kjm]/i;
-const result17 = regexp17.test(str5);
-console.log("result17 : " , result17);
+// const regexp17 = /[kjm]/i;
+// const result17 = regexp17.test(str5);
+// console.log("result17 : " , result17);
 
-const regexp18 = /[^kjm]/i;
-const result18 = regexp18.test(str5);
-console.log("result18 : " , result18);
+// const regexp18 = /[^kjm]/i;
+// const result18 = regexp18.test(str5);
+// console.log("result18 : " , result18);
 
-const regexp19 = /[H+]/i;
-const result19 = regexp19.test(str5);
-console.log("result19 : " , result19);
+// const regexp19 = /[H+]/i;
+// const result19 = regexp19.test(str5);
+// console.log("result19 : " , result19);
 
-const regexp20 = /O$/i;
-const result20 = regexp20.test(str5);
-console.log("result20 : " , result20);
+// const regexp20 = /O$/i;
+// const result20 = regexp20.test(str5);
+// console.log("result20 : " , result20);
 
-const regexp21 = /O?$/i;
-const result21 = regexp21.test(str5);
-console.log("result21 : " , result21);
+// const regexp21 = /O?$/i;
+// const result21 = regexp21.test(str5);
+// console.log("result21 : " , result21);
 
-const regexp22 = /O+$/i;
-const result22 = regexp22.test(str5);
-console.log("result22 : " , result22);
-
-
-
-console.log("\n\n\n\n\n\n\n");
-
-//{} - indicates the number of characters, a{2} means 'aa' , ie 2 a
-
-const regexp23 = /L{2}o$/i;
-const result23 = regexp23.test(str5);
-console.log("result23 : ",result23);
-
-const regexp24 = /L{2,4}o$/i;
-const result24 = regexp24.test(str5);
-console.log("result24 : ",result24);
-
-const regexp25 = /HEL{2,4}O$/i;
-const result25 = regexp25.test(str5);
-console.log("result25 : ",result25);
-
-const regexp26 = /HEL{2,}O$/i;
-const result26 = regexp26.test(str5);
-console.log("result26 : ",result26);
-
-// \ - indicate escape characters used for matching any characters which has special meaning
-
-const regexp27 = /\d/i;
-const result27 = regexp27.test(str5);
-console.log("result27 : ",result27);
-
-const regexp28 = /\D/i;
-const result28 = regexp28.test(str5);
-console.log("result28 : ",result28);
+// const regexp22 = /O+$/i;
+// const result22 = regexp22.test(str5);
+// console.log("result22 : " , result22);
 
 
-// suppose we want to match '-' in a string.since '-' has a special meaning in regular expressions it will not work as expected and will match everything
 
-const regexp29 = /-/i;
-const result29 = regexp29.test(str5);
-console.log("result29 : ",result29);
+// console.log("\n\n\n\n\n\n\n");
+
+// //{} - indicates the number of characters, a{2} means 'aa' , ie 2 a
+
+// const regexp23 = /L{2}o$/i;
+// const result23 = regexp23.test(str5);
+// console.log("result23 : ",result23);
+
+// const regexp24 = /L{2,4}o$/i;
+// const result24 = regexp24.test(str5);
+// console.log("result24 : ",result24);
+
+// const regexp25 = /HEL{2,4}O$/i;
+// const result25 = regexp25.test(str5);
+// console.log("result25 : ",result25);
+
+// const regexp26 = /HEL{2,}O$/i;
+// const result26 = regexp26.test(str5);
+// console.log("result26 : ",result26);
+
+// // \ - indicate escape characters used for matching any characters which has special meaning
+
+// const regexp27 = /\d/i;
+// const result27 = regexp27.test(str5);
+// console.log("result27 : ",result27);
+
+// const regexp28 = /\D/i;
+// const result28 = regexp28.test(str5);
+// console.log("result28 : ",result28);
 
 
-// so we can write it as 
-const regexp30 = /\-/i;
-const result30 = regexp30.test(str5);
-console.log("result30 : ",result30);
+// // suppose we want to match '-' in a string.since '-' has a special meaning in regular expressions it will not work as expected and will match everything
 
+// const regexp29 = /-/i;
+// const result29 = regexp29.test(str5);
+// console.log("result29 : ",result29);
+
+
+// // so we can write it as 
+// const regexp30 = /\-/i;
+// const result30 = regexp30.test(str5);
+// console.log("result30 : ",result30);
+
+
+//17/8/2024
+
+
+//'^' and '$' can only be used in the start and end of a string and cannot be used in between string to match,so we use lookheads for giving starting and ending in between strings
+
+
+//(?=) - positive lookahead, A(?=B) -> matches : A only if A is followed by B
+//(?!) - Negative lookahead, A(?!B) -> matches : A only if A is not followed by B
+//(?<=) - positive lookbehid, (?<=B)A -> Matches : A only if A is preceded by B
+//(?<!) - Negative lookbehid, (?<!B)A -> Matches : A only if A is not preceded by B
+
+
+{
+
+    let dateString = '02-05-2003';
+
+    let regex = /-\d+-/; // it will match also '-05-' in result and give as result array
+    const result = dateString.match(regex);
+
+    console.log("result : ",result);
+
+    //inorder to match exactly '05' in datastring we can use lookheads
+    let regexp1 = /(?<=-)\d+(?=-)/;// This will exactly match '05' in string
+    const result1 = dateString.match(regexp1);
+    console.log("result1 : ", result1);
+
+    //example for negative lookhead and negative lookbehind
+    let phone = "(91)8547986109";
+    
+    //to match numbers outside of (91)
+    const phoneRegex = /(?<!\()\d+(?!\))/;
+    const phoneRegexResult = phone.match(phoneRegex);
+    console.log("phoneRegexResult : ",phoneRegexResult);
+
+
+}
